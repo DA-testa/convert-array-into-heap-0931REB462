@@ -7,8 +7,8 @@ class MinHeap:
 
     def SiftDown(self, i):
         min_index = i
-        left = 2 * i + 1  # left child
-        right = 2 * i + 2  # right child
+        left = 2 * i + 1  
+        right = 2 * i + 2 
         if left < self.size and self.A[left] < self.A[min_index]:
             min_index = left
         if right < self.size and self.A[right] < self.A[min_index]:
