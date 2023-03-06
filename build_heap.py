@@ -23,9 +23,10 @@ class MinHeap:
         for i in range(n // 2 - 1, -1, -1):
             self.SiftDown(i)
 
-
-def main():
+def readData():
+    print("Please enter numbers of swaps")
     n = int(input())
+    print("Please enter array")
     array = list(map(int, input().split()))
     assert len(array) == n
 
@@ -35,6 +36,14 @@ def main():
     print(len(swaps))
     for swap in swaps:
         print(*swap)
+    print("Do you want to reapeat? Press Y if yes, N if no")
+    check=input()
+    if check.lower() == "y":
+        readData()
+    
+
+def main():
+    readData()
 
 
 if __name__ == "__main__":
