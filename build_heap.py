@@ -34,7 +34,7 @@ def readData():
         array = list(map(int, input().split()))
         assert len(array) == n
     if "F" in text:
-        al="./test/"+input()
+            al="./test/"+input()
             f = open(al, "r")
             n = int(f.readline())
             array = list(map(int, f.readline().split()))
