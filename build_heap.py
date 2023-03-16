@@ -24,8 +24,8 @@ class MinHeap:
             self.SiftDown(i)
 
 def readData():
-    print("Please enter numbers of swaps")
-    n = int(input())
+    ##print("Please enter numbers of swaps")
+    ##n = int(input())
     print("Please enter array")
     array = list(map(int, input().split()))
     assert len(array) == n
