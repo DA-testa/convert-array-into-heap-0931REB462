@@ -24,12 +24,20 @@ class MinHeap:
             self.SiftDown(i)
 
 def readData():
-    print("Please enter numbers of swaps")
-    n = int(input())
-    print("Please enter array")
-    array = list(map(int, input().split()))
-    assert len(array) == n
 
+    text = input()
+    # Printing answer, write your code here
+    if "I" in text:
+        print("Please enter numbers of swaps")
+        n = int(input())
+        print("Please enter array")
+        array = list(map(int, input().split()))
+        assert len(array) == n
+    if "F" in text:
+        al="./test/"+input()
+            f = open(al, "r")
+            n = int(f.readline())
+            array = list(map(int, f.readline().split()))
     heap = MinHeap(array)
     MinHeap.BuildHeap(heap)
     swaps = heap.swaps
