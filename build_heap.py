@@ -44,10 +44,7 @@ def readData():
     print(len(swaps))
     for swap in swaps:
         print(*swap)
-    print("Do you want to reapeat? Press Y if yes, N if no")
-    check=input()
-    if check.lower() == "y":
-        readData()
+
     
 
 def main():
